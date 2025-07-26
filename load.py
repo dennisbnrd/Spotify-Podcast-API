@@ -2,6 +2,7 @@ import pandas as pd
 from google.oauth2 import service_account
 import pandas_gbq
 import os
+from prefect_gcp import GcpCredentials
 
 def upload_to_bigquery(
     csv_file,
