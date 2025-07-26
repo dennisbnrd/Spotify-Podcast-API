@@ -9,11 +9,9 @@ CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 AUTH_URL = "https://accounts.spotify.com/api/token"
 
-
 # =======================
 # GET ACCESS TOKEN
 # =======================
-
 auth_response = requests.post(AUTH_URL, {
     'grant_type': 'client_credentials',
     'client_id': CLIENT_ID,
@@ -77,9 +75,6 @@ def get_episodes(show_id, headers):
             break
     return episode_list
 
-# def safe_get(d, k, default=None):
-#     return d[k] if k in d and d[k] is not None else default
-
 # =======================
 # MAIN LOOP – EXTRACT ALL EPISODES
 # =======================
@@ -112,9 +107,13 @@ print("\n=== Podcast Meta Data ===")
 print(df_podcasts)
 
 # =======================
-# OPTIONAL: SAVE TO CSV
+# SAVE TO FOLDER OTOMATIS
 # =======================
-df_episodes.to_csv("all_podcast_episodes.csv", index=False)
-df_podcasts.to_csv("podcast_meta.csv", index=False)
+output_folder = "data"
+os.makedirs(output_folder, exist_ok=True)
 
-print("\nData saved to CSV! Selanjutnya bisa lanjut ke cleaning/transform/load ke BigQuery.")
+df_episodes.to_csv(os.path.join(output_folder, "all_podcast_episodes.csv"), index=False)
+df_podcasts.to_csv(os.path.join(output_folder, "podcast_meta.csv"), index=False)
+
+print(f"\nData saved to folder: {output_folder}/ (Cek file hasilnya di folder ini)")
+

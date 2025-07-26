@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 
 def transform_podcast_data(input_csv, output_csv):
     """
@@ -31,7 +32,10 @@ def transform_podcast_data(input_csv, output_csv):
 # =====================
 # IMPLEMENTASI LANGSUNG
 # =====================
-input_csv = "all_podcast_episodes.csv"
-output_csv = "podcast_episodes_clean.csv"
+output_folder = "data"
+os.makedirs(output_folder, exist_ok=True)
+
+input_csv = os.path.join(output_folder, "all_podcast_episodes.csv")
+output_csv = os.path.join(output_folder, "podcast_episodes_clean.csv")
 
 transform_podcast_data(input_csv, output_csv)
