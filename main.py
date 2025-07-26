@@ -56,7 +56,7 @@ def run_pipeline(mode: str = "replace"):
     csv_file=clean_csv,
     project_id=PROJECT_ID,
     dataset_table=DATASET_TABLE,
-    service_account_block_name="bigquery-service-account",  # harus sama dengan nama block Secret di Prefect
+    gcp_credentials_block_name="gcp-credentials",  
     if_exists=mode
     )
     logging.info("=== PIPELINE COMPLETE ===")
