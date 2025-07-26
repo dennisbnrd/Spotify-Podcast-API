@@ -53,11 +53,11 @@ def run_pipeline(mode: str = "replace"):
     SERVICE_ACCOUNT_FILE = os.getenv("SERVICE_ACCOUNT_FILE") or "config/spotify-etl-466909-9fc4d7e5e9b3.json"
 
     upload_to_bigquery(
-        csv_file=clean_csv,
-        project_id=PROJECT_ID,
-        dataset_table=DATASET_TABLE,
-        service_account_file=SERVICE_ACCOUNT_FILE,
-        if_exists=mode
+    csv_file=clean_csv,
+    project_id=PROJECT_ID,
+    dataset_table=DATASET_TABLE,
+    service_account_block_name="bigquery-service-account",  # harus sama dengan nama block Secret di Prefect
+    if_exists=mode
     )
     logging.info("=== PIPELINE COMPLETE ===")
 
