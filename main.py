@@ -26,7 +26,7 @@ logging.basicConfig(
         logging.StreamHandler()
     ]
 )
-
+@flow(name="Spotify ETL Pipeline")
 def run_pipeline(mode: str = "replace"):
     """
     Run the ETL pipeline for Spotify podcast data.
