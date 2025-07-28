@@ -62,7 +62,7 @@ Untuk menjalankan proyek ini secara lokal atau di cloud, pastikan Anda telah men
 
 1. **Clone repository** ini ke mesin lokal Anda:
    ```bash
-   git clone https://github.com/username/spotify-etl.git
+   git clone https://github.com/dennisbnrd/spotify-etl.git
    cd spotify-etl
    ```
 2. Install dependencies:
