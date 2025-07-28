@@ -82,3 +82,5 @@ Untuk menjalankan proyek ini secara lokal atau di cloud, pastikan Anda telah men
 3. Jadwalkan dan jalankan pipeline di Prefect Cloud sesuai kebutuhan Anda.
 
 Presentasi: [Spotify Podcast API](https://www.canva.com/design/DAGucUb6Mi4/a7FUKn_bFmiIU73Xy0PGsQ/edit?utm_content=DAGucUb6Mi4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+Looker Studio: [Spotify Podcast API](https://lookerstudio.google.com/reporting/5bd1f802-b3ba-465c-bc81-7c9c0798026c)
