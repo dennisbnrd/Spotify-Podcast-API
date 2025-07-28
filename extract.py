@@ -9,11 +9,6 @@ def extract_podcast_data(output_folder="data"):
     """
     Extract all episodes and meta info from Spotify podcasts,
     and save as CSV in output_folder.
-    
-    Args:
-        output_folder (str): Folder tempat menyimpan CSV hasil extract.
-    Returns:
-        tuple: (path_episodes_csv, path_meta_csv)
     """
     CLIENT_ID = os.getenv("CLIENT_ID")
     CLIENT_SECRET = os.getenv("CLIENT_SECRET")
