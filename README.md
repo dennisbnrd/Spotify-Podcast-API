@@ -80,3 +80,5 @@ Untuk menjalankan proyek ini secara lokal atau di cloud, pastikan Anda telah men
    - Pipeline ini dapat dideploy ke Prefect Cloud menggunakan kode di dalam deploy.py.
 
 3. Jadwalkan dan jalankan pipeline di Prefect Cloud sesuai kebutuhan Anda.
+
+Presentasi: [Spotify Podcast API](https://www.canva.com/design/DAGucUb6Mi4/a7FUKn_bFmiIU73Xy0PGsQ/edit?utm_content=DAGucUb6Mi4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
