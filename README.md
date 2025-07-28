@@ -15,7 +15,6 @@ Proyek ini mengimplementasikan **ETL (Extract, Transform, Load)** pipeline untuk
 4. [Prasyarat](#prasyarat)
 5. [Pengaturan Lingkungan](#pengaturan-lingkungan)
 6. [Penggunaan](#penggunaan)
-7. [Lisensi](#lisensi)
 
 ## Tujuan Proyek
 
