@@ -1,4 +1,4 @@
-# ETL Pipeline untuk Podcast Spotify
+# ETL Spotify Podcast API
 
 Proyek ini mengimplementasikan **ETL (Extract, Transform, Load)** pipeline untuk mengambil data podcast dari Spotify API, memprosesnya, dan mengunggahnya ke **Google BigQuery**. Pipeline ini menggunakan **Prefect** untuk workflow orchestration, **GitHub** sebagai sumber kode, dan **GCP** untuk penyimpanan data.
 
